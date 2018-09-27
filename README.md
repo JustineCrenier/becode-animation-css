@@ -4,7 +4,7 @@ Réalisation de différents exercices pour apprendre l'**animation en CSS3.**
 
 ## Ex.1 | Drill
 
-![Gif of drill](img/drill.gif)
+![Gif of drill](/img/drill.gif)
 
 Animation avec les transitions
 
