@@ -1,0 +1,45 @@
+// IMPORT
+
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+//STYLE
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $black;
+	height: 100vh;
+	font-family: sans-serif;
+
+	a{
+		text-decoration: none;
+		display: block;
+		color: $white;
+		padding: 20px 30px;
+		border: 2px solid $white;
+		margin-bottom: 30px;
+		transition: all 0.5s ease;
+	}
+	
+	a:first-child:hover{
+		color: $black;
+		background-color: $white;
+	}
+
+	a:nth-child(2):hover{
+		@include transform(scale(1.2));
+		color: $black;
+		background-color: $white;
+	}
+
+	a:nth-child(3):hover{
+		@include transform(translateX(25%));
+		color: $black;
+		background-color: $white;
+	}
+
+}

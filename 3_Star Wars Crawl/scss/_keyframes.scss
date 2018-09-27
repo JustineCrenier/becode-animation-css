@@ -1,0 +1,49 @@
+//animation du texte defilant 
+@keyframes crawl{
+	0% {
+		opacity: 1;
+		transform: translate(-50%,-50%) perspective(300px) rotateX(25deg) scale3d(3,3,3) translate3d(0px, 720px, 0px);
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-50%,-50%) perspective(300px) rotateX(25deg) scale3d(3,3,3) translate3d(0px, -500px, 0px);
+	}
+}
+
+//animation de l'apparition du texte au début
+@keyframes debut{
+	0%{
+		opacity: 0;
+	}
+	25%{
+		opacity: 1;
+	}
+	75%{
+		opacity:1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+//animation logo becode
+
+@keyframes becode{
+	0%{ 
+		opacity: 0;
+		transform: perspective(300px) scale3d(5,5,5) translate(-50%,-50%);
+	}
+	20%{
+		opacity: 1;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: perspective(300px) scale3d(0.3,0.3,0.3) translate(-50%,-50%);
+	}
+}

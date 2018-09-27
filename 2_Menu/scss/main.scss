@@ -1,0 +1,69 @@
+// IMPORT
+
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+//STYLE
+
+body{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: $background;
+
+	nav{
+
+		ul{
+			
+			li{
+				display: flex;
+
+				a{
+					background-color: $thirdColor;
+					padding: 20px;
+					position: relative;
+					z-index: 9999;
+
+
+					&:hover{
+						background-color: white;
+						transition: all 0.8s ease;
+					}
+					
+					i{
+						font-size: 2em!important;
+						color: $primaryColor;
+					}
+				}
+
+				a:hover + p{
+					@include transform(translateX(0%));
+					transition: all 0.5s ease;
+				}
+
+				p{
+					color: white;
+					background-color: $secondColor;
+					padding: 20px;
+					font-family: sans-serif;
+					width: 75px;
+					@include transform(translateX(-170%));
+				}
+			}
+
+			li:first-child{
+
+				a{
+					background-color: $secondColor;
+
+					&:hover{
+						background-color: white;
+						transition: all 0.8s ease;
+					}
+				}
+			}
+		}
+	}
+}
